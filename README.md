@@ -1,15 +1,15 @@
 # 🕒 Low Latency C++ Timers
 
-Bu repository, yüksek frekanslı ve düşük gecikmeli sistemlerde kullanılan C++ zamanlayıcı tekniklerini öğretmek amacıyla hazırlanmıştır. Aşağıdaki örneklerde, zaman ölçüm teknikleri, `rdtsc`, `std::chrono`, ve CPU affinity gibi başlıklar yer almaktadır.
+This repository is designed to teach C++ timing techniques used in high-frequency and low-latency systems. The following examples cover topics such as time measurement techniques, rdtsc, std::chrono, and CPU affinity.
 
-## 📂 İçerikler
+## 📂 Contents
 
-- `high_resolution_timer.cpp`: `std::chrono::high_resolution_clock` ile basit zaman ölçümü
-- `rdtsc_timer.cpp`: CPU timestamp counter (`rdtsc`) kullanarak cycle tabanlı zaman ölçümü
-- `benchmark_function_call.cpp`: Fonksiyon çağırma süresi benchmark'ı
-- `cpu_affinity.cpp`: CPU affinity ayarlayarak daha deterministik ölçüm yapılması
+- `high_resolution_timer.cpp`: Basic time measurement using `std::chrono::high_resolution_clock` 
+- `rdtsc_timer.cpp`: Cycle-based time measurement using CPU timestamp counter (`rdtsc`) 
+- `benchmark_function_call.cpp`: Benchmarking function call duration
+- `cpu_affinity.cpp`: Setting CPU affinity for more deterministic measurements
 
-## 🛠 Derleme
+## 🛠 Compilation
 ```bash
 g++ -std=c++20 -O2 high_resolution_timer.cpp -o timer
 ```
